@@ -13,14 +13,13 @@
 # https://github.com/anchore/grype
 name: Anchore Grype vulnerability scan
 
-on:
-  push:
-    branches: [ $default-branch, $protected-branches ]
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ $default-branch ]
-  # schedule:
-  #   - cron: $cron-weekly
+on: push
+  #   branches: [ $default-branch, $protected-branches ]
+  # pull_request:
+  #   # The branches below must be a subset of the branches above
+  #   branches: [ $default-branch ]
+  # # schedule:
+  # #   - cron: $cron-weekly
 
 permissions:
   contents: read
